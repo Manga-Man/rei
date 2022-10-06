@@ -2,6 +2,13 @@
 const { REST, SlashCommandBuilder, Routes, Client, GatewayIntentBits, embedLength } = require('discord.js');
 const { clientId, guildId, token1, token2 } = require('./config.json');
 const Discord = require('discord.js')
+const express = require('express');
+const app = express();
+
+const port = 8080;
+
+app.listen(port);
+console.log('app launched at port 8080!');
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, 'GuildMessages', 'Guilds'] });
 const prefix = '>'
