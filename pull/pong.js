@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 const { REST, SlashCommandBuilder, Routes, Client, GatewayIntentBits, embedLength } = require('discord.js');
-const { clientId, guildId, token } = require('./config.json');
+const { clientId, guildId, token1, token2 } = require('./config.json');
 const Discord = require('discord.js')
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, 'GuildMessages', 'Guilds'] });
@@ -87,4 +87,4 @@ client.on('messageCreate', function(message) {
 
 
 // Login to Discord with your client's token
-client.login(token);
+client.login(token1 + token2);
