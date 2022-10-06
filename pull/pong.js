@@ -7,6 +7,10 @@ const app = express();
 
 const port = 8080;
 
+function genPort() {
+cosole.log('genPort() is not operational rn')
+}
+
 app.listen(port);
 console.log('app launched at port 8080!');
 // Create a new client instance
