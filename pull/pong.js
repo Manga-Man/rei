@@ -45,7 +45,7 @@ rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
 	.catch(console.error);
 
 
-
+//complete the other comands from the command list later...!!!
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
